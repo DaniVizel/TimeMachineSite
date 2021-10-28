@@ -1,4 +1,11 @@
 /* 
+https://trends.google.com/trends/explore?date=2017-09-27%202021-10-27&q=%2Fm%2F0l8pd,%2Fm%2F089cnx,%2Fm%2F0623s3,%2Fm%2F0dhxtm,%2Fm%2F02q_m4z
+
+I'm interested in houseplants. 
+Using data from Google Search Trends, I will create a site that visualizes the interest in 5 different 
+types of houseplants each week for the past 5 years to explore how their popularity changed
+before and after the global pandemic.
+
 HELP DESK
 -  green fill blend mode stops working when inside of plant wrap div (being used to set % to height
 - isolate text from blend modes
@@ -26,14 +33,39 @@ h1 {
 }
 h2 {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 8vw;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     /* isolation: isolate; */
-
-
-
  
+}
+h3 {
+    margin-left: 70vw;
+    margin-top: -30vh;
+    font-weight: 500;
+
+}
+p {
+    max-width: 350px;
+    margin-left: 8vw;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    text-align: justify;
+    margin-top: 1.5em;
+}
+em {
+    font-weight: 300;
+}
+h4 {
+    max-width: 300px;
+    margin-left: 70vw;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4em;
+    /* text-align: justify; */
+    margin-top: 1.5em;
 }
 .plantwrap {
     position: absolute;
@@ -73,8 +105,10 @@ button {
     margin-top: 3vh;
     margin-right: 30px;
 
+    cursor: pointer;
+
 }
-.button-bar {
+header {
     margin-left: 25vw;
 }
 .active-button {
