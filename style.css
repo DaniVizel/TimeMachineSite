@@ -1,0 +1,83 @@
+/* 
+HELP DESK
+-  green fill blend mode stops working when inside of plant wrap div (being used to set % to height
+- isolate text from blend modes
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #e6ede9;
+}
+h1 {
+    color: #338A56;
+    font-weight: 900;
+    font-size: 40px;
+    width: 370px;
+    margin-left: 8vw;
+    margin-top: 5vh;
+    /* isolation: isolate; */
+
+}
+h2 {
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 8vw;
+    margin-top: 20px;
+    /* isolation: isolate; */
+
+
+
+ 
+}
+.plantwrap {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    margin: auto;
+    height: 80vh;
+    width: auto;
+
+
+}
+
+.main-img {
+    height: 100%;
+}
+
+.greenfill {
+    position: absolute;
+    transform-origin: bottom center;
+    background-color: #66c68d;
+    mix-blend-mode: lighten;
+    width: 100vw;
+    left: 0;
+    height: 60%; 
+    /* 0 is at bottom of screen, 100 is at  */
+    bottom: 30px;
+    z-index: 100;
+}
+
+button {
+    background-color: #66c68d;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-right: 30px;
+
+}
+.button-bar {
+    margin-left: 25vw;
+}
+.active-button {
+    background-color: black;
+    color: #66c68d;
+}
