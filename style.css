@@ -48,7 +48,7 @@ h2 {
 h3 {
     position: relative;
     margin-left: 70vw;
-    margin-top: -30vh;
+    margin-top: -10vh;
     font-weight: 500;
     z-index: 10;
 
@@ -83,9 +83,9 @@ h4 {
 .plantwrap {
     position: absolute;
     left: 50%;
-    bottom: 30px;
+    bottom: 15vh;
     margin: auto;
-    height: 80vh;
+    height: 70vh;
     width: auto;
 
 }
@@ -116,16 +116,35 @@ button {
     color: black;
     padding: 15px 30px;
     border-radius: 10px;
-    margin-top: 3vh;
     margin-right: 30px;
-
+    margin-bottom: 10px;
     cursor: pointer;
 
 }
+.home-button {
+    position: absolute;
+    filter: invert(70%) sepia(6%) saturate(3588%) hue-rotate(92deg) brightness(112%) contrast(60%);
+    height: 45px;
+    width: auto;
+    margin-left: 8vw;
+}
+.home-button:hover {
+    filter: none;
+}
 header {
+    position: relative;
+    margin-top: 3vh;
     margin-left: 25vw;
 }
 .active-button {
     background-color: black;
     color: #66c68d;
+}
+#graphwrap {
+    position: absolute;
+    margin:auto;
+    height: 40vh;
+    width: 100vw;
+    margin-top: -200px;
+    bottom: 0;
 }
