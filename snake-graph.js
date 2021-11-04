@@ -49,8 +49,8 @@ var pothosWidth = 1;
 var calatheaCol = 'rgba(0,0,0,0.5)'
 var calatheaWidth = 1;
 
-var snakeCol = 'rgba(0,0,0,0.5)'
-var snakeWidth = 1;
+var snakeCol = "#519E70"
+var snakeWidth = 5;
 
 var ivyCol = 'rgba(0,0,0,0.5)'
 var ivyWidth = 1;
@@ -147,9 +147,6 @@ async function chartIt(){
             maintainAspectRatio: false,
             scales: {
                 y: {
-                    ticks: {
-                        fontSize: 40,
-                    },
                     grid: {display: false},
 
                 },
@@ -158,7 +155,6 @@ async function chartIt(){
                         {color:"#edbd4e",
                         lineWidth: 3},
                     ticks:{
-                        fontSize: 40,
                         callback: function(value, index, values) {
                             // where 3 is the line index you want to display
                             return (index === 175) ? "Week of WHO declaring global pandemic" : null;
@@ -178,6 +174,10 @@ async function chartIt(){
             onHover: function(event, item) { 
                 if (item.length) {
                     var dataIndex = item[0].index;
+                    
+                    // if (isIndex){
+                        // console.log(ypothos[dataIndex]);
+                    // } else if (isPothos){
                         //console.log(ypothos[dataIndex]); //change dataset name based on names assigned above
                         $(".greenfill").css("height", (ypothos[dataIndex]) + "%");
                     //}

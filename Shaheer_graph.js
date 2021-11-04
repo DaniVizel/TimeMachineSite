@@ -1,6 +1,15 @@
 console.log("im working!");
 // PARSING THE DATA
 
+// var isIndex;
+// var isPothos;
+
+// if ($('.index-check').length > 0){
+//     isIndex = true;
+// } else if ($('.pothos-check').length > 0){
+//     isPothos = true;
+// }
+
 async function getData() {
     const response = await fetch('plant_data.csv');
     const data = await response.text();
@@ -43,8 +52,8 @@ const ysnake = [];
 const yivy = [];
 const ypearl = [];
 
-var pothosCol = 'rgba(0,0,0,0.5)'
-var pothosWidth = 1;
+var pothosCol = "#519E70"
+var pothosWidth = 5;
 
 var calatheaCol = 'rgba(0,0,0,0.5)'
 var calatheaWidth = 1;
@@ -66,7 +75,6 @@ chartIt();
 async function chartIt(){
     await getData();
     const ctx = document.getElementById('chart').getContext('2d');
-    Chart.defaults.font.size = 18;
     const myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -147,9 +155,6 @@ async function chartIt(){
             maintainAspectRatio: false,
             scales: {
                 y: {
-                    ticks: {
-                        fontSize: 40,
-                    },
                     grid: {display: false},
 
                 },
@@ -158,7 +163,6 @@ async function chartIt(){
                         {color:"#edbd4e",
                         lineWidth: 3},
                     ticks:{
-                        fontSize: 40,
                         callback: function(value, index, values) {
                             // where 3 is the line index you want to display
                             return (index === 175) ? "Week of WHO declaring global pandemic" : null;
@@ -175,12 +179,22 @@ async function chartIt(){
 
                 legend: {display: false},
             },
+            // onClick: (e) => {
+            //     const canvasPosition = Chart.helpers.getRelativePosition(e, chart);
+    
+            //     // Substitute the appropriate scale IDs
+            //     const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
+            //     console.log(dataX);
+            // },
             onHover: function(event, item) { 
                 if (item.length) {
                     var dataIndex = item[0].index;
-                        //console.log(ypothos[dataIndex]); //change dataset name based on names assigned above
-                        $(".greenfill").css("height", (ypothos[dataIndex]) + "%");
-                    //}
+                    
+                    // if (isIndex){
+                        // console.log(ypothos[dataIndex]);
+                    // } else if (isPothos){
+                        console.log(ypothos[dataIndex]); //change dataset name based on names assigned above
+                    }
                 }
             }
         }
@@ -190,5 +204,3 @@ async function chartIt(){
 // https://www.chartjs.org/docs/latest/
 // https://www.youtube.com/watch?v=5-ptp9tRApM&ab_channel=TheCodingTrain
 // https://jsfiddle.net/fraser/kuwh3nzs/
-
-

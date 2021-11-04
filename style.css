@@ -108,6 +108,8 @@ h4 {
     /* 0 is at bottom of screen, 100 is at  */
     bottom: 0px;
     z-index: 0;
+    transition: height 0.5s;
+
 }
 
 button {
