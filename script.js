@@ -8,6 +8,10 @@ document.onmousemove = getMousePos;
 
 // FUNCTIONS
 
+if ($(".index-check").length > 0 ){
+    console.log ("index-check exists");
+}
+
 function getMousePos(event){
     // console.log(event.clientX);
     var mouseX = event.clientX;
@@ -17,4 +21,4 @@ function getMousePos(event){
     // how do i set percentage of vw to mouse X pos?
 }
 
-console.log("timemachine");
+// console.log("timemachine");

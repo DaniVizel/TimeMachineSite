@@ -171,13 +171,13 @@ async function chartIt(){
 
                 legend: {display: false},
             },
-            onClick: (e) => {
-                const canvasPosition = Chart.helpers.getRelativePosition(e, chart);
+            // onClick: (e) => {
+            //     const canvasPosition = Chart.helpers.getRelativePosition(e, chart);
     
-                // Substitute the appropriate scale IDs
-                const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
-                console.log(dataX);
-            }
+            //     // Substitute the appropriate scale IDs
+            //     const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
+            //     console.log(dataX);
+            // }
         }
     });
 }

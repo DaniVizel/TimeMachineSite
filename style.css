@@ -148,3 +148,8 @@ header {
     margin-top: -200px;
     bottom: 0;
 }
+.index-check {
+    display: none;
+    position: absolute;
+    width: 0;
+}
