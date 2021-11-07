@@ -47,7 +47,7 @@ h2 {
 }
 h3 {
     position: relative;
-    margin-left: 70vw;
+    margin-left: 80vw;
     margin-top: -10vh;
     font-weight: 500;
     z-index: 10;
@@ -71,7 +71,7 @@ em {
 h4 {
     position: relative;
     max-width: 300px;
-    margin-left: 70vw;
+    margin-left: 80vw;
     font-size: 13px;
     font-weight: 500;
     line-height: 1.4em;
@@ -113,6 +113,7 @@ h4 {
 }
 
 button {
+    position: relative;
     background-color: #66c68d;
     border: none;
     color: black;
@@ -136,7 +137,8 @@ button {
 header {
     position: relative;
     margin-top: 3vh;
-    margin-left: 25vw;
+    width: 100%;
+    text-align: center;
 }
 .active-button {
     background-color: black;

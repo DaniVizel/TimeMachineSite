@@ -175,14 +175,14 @@ async function chartIt(){
 
                 legend: {display: false},
             },
-            onHover: function(event, item) { 
-                if (item.length) {
-                    var dataIndex = item[0].index;
-                        //console.log(ypothos[dataIndex]); //change dataset name based on names assigned above
-                        $(".greenfill").css("height", (ypothos[dataIndex]) + "%");
-                    //}
-                }
-            }
+            // onHover: function(event, item) { 
+            //     if (item.length) {
+            //         var dataIndex = item[0].index;
+            //             //console.log(ypothos[dataIndex]); //change dataset name based on names assigned above
+            //             $(".greenfill").css("height", (ypothos[dataIndex]) + "%");
+            //         //}
+            //     }
+            // }
         }
     });
 }

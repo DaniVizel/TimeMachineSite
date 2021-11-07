@@ -49,14 +49,14 @@ var pothosWidth = 1;
 var calatheaCol = 'rgba(0,0,0,0.5)'
 var calatheaWidth = 1;
 
-var snakeCol = "#519E70"
-var snakeWidth = 5;
+var snakeCol = 'rgba(0,0,0,0.5)'
+var snakeWidth = 1;
 
 var ivyCol = 'rgba(0,0,0,0.5)'
 var ivyWidth = 1;
 
-var pearlCol = 'rgba(0,0,0,0.5)'
-var pearlWidth = 1;
+var pearlCol = "#519E70"
+var pearlWidth = 5;
 
 
 
@@ -132,7 +132,7 @@ async function chartIt(){
                 label: 'String-of-Pearls popularity (by searches)',
                 data: ypearl,
                 borderColor: [
-                    ivyCol,
+                    pearlCol,
                 ],
                 pointRadius: 0,
                 pointHoverRadius: 5,
@@ -178,8 +178,8 @@ async function chartIt(){
                     // if (isIndex){
                         // console.log(ypothos[dataIndex]);
                     // } else if (isPothos){
-                        //console.log(ypothos[dataIndex]); //change dataset name based on names assigned above
-                        $(".greenfill").css("height", (ysnake[dataIndex]) + "%");
+                        console.log(ypearl[dataIndex]); //change dataset name based on names assigned above
+                        $(".greenfill").css("height", (ypearl[dataIndex]) + "%");
                     //}
                 }
             }
