@@ -48,7 +48,7 @@ h2 {
 h3 {
     position: relative;
     margin-left: 80vw;
-    margin-top: -10vh;
+    margin-top: -20vh;
     font-weight: 500;
     z-index: 10;
 
@@ -72,7 +72,7 @@ h4 {
     position: relative;
     max-width: 300px;
     margin-left: 80vw;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 1.4em;
     /* text-align: justify; */
@@ -83,9 +83,9 @@ h4 {
 .plantwrap {
     position: absolute;
     left: 50%;
-    bottom: 15vh;
+    bottom: 25vh;
     margin: auto;
-    height: 70vh;
+    height: 60vh;
     width: auto;
 
 }
