@@ -54,7 +54,7 @@ h2 {
     float: right;
     /* margin-left: 70vw; */
     margin-right: 8vw;
-    margin-top: -25vh;
+    margin-top: -180px;
     max-width: 300px;
 
 
@@ -69,6 +69,13 @@ h4 {
     font-weight: 300;
     line-height: 1.4em;
     margin-top: 1.5em;
+    text-shadow: 
+    0px 1px 1px #e6ede9,
+    0px -1px 1px #e6ede9,
+    1px 0px 1px #e6ede9,
+    -1px 0px 1px #e6ede9
+    ;
+
 
 }
 p {
@@ -92,15 +99,14 @@ em {
     left: 50%;
     top: 15vh;
     bottom: 25vh;
-    /* height: 55vh;
-    width: auto; */
-    height: auto;
-    width: 20vw;
+    height: 55vh;
+    width: auto;
 
 }
 
 .main-img {
     height: 100%;
+    /* width: 100%; */
     transform: translateX(-50%);
     /* only works when transfrom is on sibling element NOT on parent */
 
@@ -130,18 +136,16 @@ button {
     padding: 15px 30px;
     border-radius: 10px;
     margin-right: 30px;
-    margin-bottom: 10px;
-    cursor: pointer;
-
 }
 .home-button {
-    position: absolute;
+    position: relative;
     filter: invert(70%) sepia(6%) saturate(3588%) hue-rotate(92deg) brightness(112%) contrast(60%);
     height: 45px;
     width: auto;
     margin-left: 8vw;
     z-index: 100;
     margin-right: 30px;
+    float: left;
 }
 .home-button:hover {
     transform: scale(1.2);
@@ -151,6 +155,7 @@ header {
     margin-top: 3vh;
     width: 100%;
     text-align: center;
+    margin-bottom: 10vh;
     /* background-color: red; */
 }
 .active-button {
@@ -168,3 +173,38 @@ header {
     padding-top: 5%;
 }
 
+ @media (max-width: 992px) { /* If width is no more than 950px... then */
+    h1 h2 h3 h4 .right-text-wrap #graphwrap{
+        position: relative;
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        float: none;
+    }
+    header {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    button {
+        margin-bottom: 15px;
+    }
+    #graphwrap {
+        bottom: auto;
+    }
+    .right-text-wrap {
+        margin-top: 20px;
+    }
+    .plantwrap {
+        position: relative;
+        top: 0;
+        margin-top: 350px;
+        bottom: auto;
+        height: 40vh;
+    }
+    .plantwrap.pearls {
+        margin-top: 450px;
+    }
+    
+}
