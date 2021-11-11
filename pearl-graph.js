@@ -179,7 +179,7 @@ async function chartIt(){
                         // console.log(ypothos[dataIndex]);
                     // } else if (isPothos){
                         console.log(ypearl[dataIndex]); //change dataset name based on names assigned above
-                        $(".greenfill").css("height", (ypearl[dataIndex]) + "%");
+                        $(".greenfill").css("height", (ypearl[dataIndex]) * 1 + "%");
                     //}
                 }
             }

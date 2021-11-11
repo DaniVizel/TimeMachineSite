@@ -90,9 +90,12 @@ em {
 .plantwrap {
     position: absolute;
     left: 50%;
+    top: 15vh;
     bottom: 25vh;
-    height: 55vh;
-    width: auto;
+    /* height: 55vh;
+    width: auto; */
+    height: auto;
+    width: 20vw;
 
 }
 
