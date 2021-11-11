@@ -66,7 +66,7 @@ chartIt();
 async function chartIt(){
     await getData();
     const ctx = document.getElementById('chart').getContext('2d');
-    Chart.defaults.font.size = 18;
+    Chart.defaults.font.size = 11;
     const myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -169,7 +169,9 @@ async function chartIt(){
                     yAlign: 'bottom',
                 },
 
-                legend: {display: false},
+                legend: {
+                    display: false,
+                },
             },
             onHover: function(event, item) { 
                 if (item.length) {

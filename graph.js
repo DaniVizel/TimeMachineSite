@@ -66,7 +66,7 @@ chartIt();
 async function chartIt(){
     await getData();
     const ctx = document.getElementById('chart').getContext('2d');
-    Chart.defaults.font.size = 18;
+    Chart.defaults.font.size = 11;
     const myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -148,7 +148,7 @@ async function chartIt(){
             scales: {
                 y: {
                     ticks: {
-                        fontSize: 40,
+                        fontSize: 10,
                     },
                     grid: {display: false},
 
@@ -158,7 +158,7 @@ async function chartIt(){
                         {color:"#edbd4e",
                         lineWidth: 3},
                     ticks:{
-                        fontSize: 40,
+                        fontSize: 10,
                         callback: function(value, index, values) {
                             // where 3 is the line index you want to display
                             return (index === 175) ? "Week of WHO declaring global pandemic" : null;
